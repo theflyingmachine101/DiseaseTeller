@@ -1,0 +1,13 @@
+<%-include("header")-%>
+<div class="box" id="heading">
+  <h1> <%=Title%></h1>
+</div>
+<div class="box">
+    <%for(var i=0;i<disease.length;++i){%>
+      <div class="item">
+        <a href="/<%=disease[i].category%>" style="text-decoration:none"><%=disease[i].category%></a>
+        <input type="hidden" name="title" value="<%=Title%>">
+      </div>
+    <%}%>
+</div>
+<%-include("footer")-%>

@@ -1,0 +1,17 @@
+<%-include("header")-%>
+<div class="box" id="heading">
+  <h1> <%=Title%></h1>
+</div>
+<div class="box">
+  <form  action="/answer" method="post">
+    <%for(var i=0;i<symptoms.length;++i){%>
+
+      <div class="item">
+        <input type="checkbox" name="checkbox" value="<%=symptoms[i]%>" >
+        <p><%=symptoms[i]%></p>
+      </div>
+    <%}%>
+      <button type="submit" name="Category" value="<%=Category%>">Submit</button>
+    </form>
+</div>
+<%-include("footer")-%>
