@@ -1,0 +1,12 @@
+<%-include("header")-%>
+<div class="box" id="heading">
+  <h1>You can try </h1>
+</div>
+<div class="box">
+    <%for(var i=0;i<remedies.length;++i){%>
+      <div class="item">
+        <p><%=remedies[i]%></p>
+      </div>
+    <%}%>
+</div>
+<%-include("footer")-%>
