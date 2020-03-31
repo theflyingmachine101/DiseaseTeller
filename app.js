@@ -6,6 +6,7 @@ const app = express();
 const ejs = require("ejs");
 const  diseaseList=require(__dirname+"/diseaseList.js");
 const  diseaseSymptoms=require(__dirname+"/diseaseSymptoms.js");
+const homeRemedies=require(__dirname+"/homeRemedies.js");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
   extended: true
@@ -28,7 +29,7 @@ app.get("/", function(req, res) {
   });
 });
 
-
+//get request for disease name
 app.get("/:type", function(req, res) {
   var tempSymptoms=[],symptoms=[];
   for(var i=0;i<diseaseList.length;++i)
@@ -81,6 +82,10 @@ app.post("/answer", function(req, res) {
       }
     }
   }
-  console.log(answer);
   res.render("Answer",{Title:answer});
+});
+
+//Get request for home remedies
+app.get("/homeRemedies/:type",function(req,res){
+  res.render("homeRemedies",{remedies:homeRemedies[req.params.type]});
 });
