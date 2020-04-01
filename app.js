@@ -7,6 +7,8 @@ const ejs = require("ejs");
 const  diseaseList=require(__dirname+"/diseaseList.js");
 const  diseaseSymptoms=require(__dirname+"/diseaseSymptoms.js");
 const homeRemedies=require(__dirname+"/homeRemedies.js");
+const precautions=require(__dirname+"/precautions.js");
+const locations=require(__dirname+"/locations.js");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
   extended: true
@@ -55,6 +57,27 @@ app.get("/:type", function(req, res) {
   res.render("SymptomsList",{Category:req.params.type,Title:"Select the symptoms you have",symptoms:symptoms});
 });
 
+
+//Get request for home remedies
+app.get("/homeRemedies/:type",function(req,res){
+  res.render("homeRemedies",{remedies:homeRemedies[req.params.type]});
+});
+
+//Get request for precautions
+app.get("/precautions/:type",function(req,res){
+  res.render("precautions",{precautions:precautions[req.params.type]});
+});
+
+//Get request for finding hospitals
+app.get("/hospital/list",function(req,res){
+  console.log("heyhos");
+  res.render("locationList",{Location:locations});
+});
+//Get request for finding hospitals
+app.get("/hospita/list",function(req,res){
+  res.render("locationList",{Location:locations});
+});
+
 //Post requests  for finding Disease
 app.post("/answer", function(req, res) {
   var accuracy=0,answer="",occuredSymptoms=req.body.checkbox;
@@ -83,9 +106,4 @@ app.post("/answer", function(req, res) {
     }
   }
   res.render("Answer",{Title:answer});
-});
-
-//Get request for home remedies
-app.get("/homeRemedies/:type",function(req,res){
-  res.render("homeRemedies",{remedies:homeRemedies[req.params.type]});
 });
