@@ -9,6 +9,7 @@ const  diseaseSymptoms=require(__dirname+"/diseaseSymptoms.js");
 const homeRemedies=require(__dirname+"/homeRemedies.js");
 const precautions=require(__dirname+"/precautions.js");
 const locations=require(__dirname+"/locations.js");
+const resources=require(__dirname+"/resources.js");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
   extended: true
@@ -30,6 +31,29 @@ app.get("/", function(req, res) {
     disease: diseaseList
   });
 });
+
+
+
+//Get request for all the Detailed Disease
+app.get("/disease/allResoruces",function(req,res){
+  //res.send("He");
+ res.render("resources",{resource:resources});
+});
+
+
+//Get request for resources of  single disease
+app.get("/:type/resources",function(req,res){
+  for(var i=0;i<resources.length;++i)
+  {
+    if(resources[i].name===req.params.type)
+    {
+      res.render("resources",{resource:[resources[i]]});
+      break;
+    }
+  }
+});
+
+
 
 //get request for disease name
 app.get("/:type", function(req, res) {
