@@ -16,18 +16,18 @@ app.use(bodyParser.urlencoded({
 }));
 app.set('view engine', 'ejs');
 
-
-//Listening Port
+app.use(express.static('public'));
+//Port Used
 app.listen("3000", function () {
   console.log(" Server started on port 3000");
 });
 
-//Get requests
+//Get request for root route
 app.get("/", function (req, res) {
   res.render("index", {});
 });
 
-//Get requests for DiseaseCategory List
+//Get request for DiseaseCategory List
 app.get("/DiseaseCatList", function (req, res) {
   res.render("DiseaseCategoryList", {
     Title: "What Do you Think Where is the problem?",
@@ -35,9 +35,9 @@ app.get("/DiseaseCatList", function (req, res) {
   });
 });
 
-//Get request for all the Detailed Disease
+//Get request for resources of all the disease
 app.get("/disease/allResoruces", function (req, res) {
-  res.render("resources", { resource: resources });
+  res.render("ResourcesList", { resource: resources });
 });
 
 
@@ -45,7 +45,7 @@ app.get("/disease/allResoruces", function (req, res) {
 app.get("/:type/resources", function (req, res) {
   for (var i = 0; i < resources.length; ++i) {
     if (resources[i].name === req.params.type) {
-      res.render("resources", { resource: [resources[i]] });
+      res.render("ResourcesList", { resource: [resources[i]] });
       break;
     }
   }
@@ -53,10 +53,11 @@ app.get("/:type/resources", function (req, res) {
 
 //Get request for about page
 app.get("/aboutpage", function (req, res) {
-  res.render("About", {})
+  res.render("About", {});
 });
 
-//get request for disease name
+
+//Get request for disease in the Category Selected
 app.get("/:type", function (req, res) {
   var tempSymptoms = [], symptoms = [];
   for (var i = 0; i < diseaseList.length; ++i) {
@@ -80,26 +81,20 @@ app.get("/:type", function (req, res) {
 
 //Get request for home remedies
 app.get("/homeRemedies/:type", function (req, res) {
-  res.render("HomeRemedies", { remedies: homeRemedies[req.params.type] });
+  res.render("HomeRemediesList", { remedies: homeRemedies[req.params.type] });
 });
 
 //Get request for precautions
 app.get("/precautions/:type", function (req, res) {
-  res.render("Precautions", { precautions: precautions[req.params.type] });
+  res.render("PrecautionList", { precautions: precautions[req.params.type] });
 });
 
-//Get request for finding hospitals
+//Get request for finding nearby  hospitals
 app.get("/hospital/list", function (req, res) {
-  console.log("heyhos");
-  res.render("LocationList", { Location: locations });
+  res.render("LocationList", {Location: locations });
 });
 
-// //Get request for finding hospitals
-// app.get("/hospita/list", function (req, res) {
-//   res.render("locationList", { Location: locations });
-// });
-
-//Post requests  for finding Disease
+//Post requests  for finding the Disease a person may have
 app.post("/answer", function (req, res) {
   var accuracy = 0, answer = "", occuredSymptoms = req.body.checkbox;
   for (var i = 0; i < diseaseList.length; ++i) {
@@ -122,5 +117,3 @@ app.post("/answer", function (req, res) {
   }
   res.render("Answer", { Title: answer });
 });
-
-

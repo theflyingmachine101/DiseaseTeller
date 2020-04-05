@@ -2,5 +2,9 @@ module.exports=[
   {
     name:"Influenza",
     resources:["a","b","c"]
+  },
+  {
+    name:"l",
+    resources:["a","b","c"]
   }
 ]

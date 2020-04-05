@@ -1,14 +1,14 @@
 <%-include("header")-%>
 
-<div class="box" id="heading">
-  <h1> Select a Location</h1>
+<div class="box" id="heading" >
+  <h1>Select a Location</h1>
 </div>
-
 <div class="box">
   <%for(var i=0;i<Location.length;++i){%>
-  <a
+    <div class="item">
+  <p><a
     href="https://www.google.com/maps/search/hospital/@<%=Location[i].lat%>,<%=Location[i].long%>,13z"><%=Location[i].name%></a>
-  <br />
+  </p>
 </div>
 <%}%>
 </div>
