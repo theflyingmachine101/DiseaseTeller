@@ -1,24 +1,25 @@
 <%-include("header")-%>
+
 <div class="box" id="heading">
   <h1> You have <%=Title%></h1>
   <a href="homeRemedies/<%=Title%>">
-    <button  style="color:white" >Home Remedy</button>
+    <button style="color:white">Home Remedies</button>
   </a>
 
   <br />
   <a href="precautions/<%=Title%>">
-    <button  style="color:white" >Precautions</button>
+    <button style="color:white">Precautions</button>
   </a>
 
   <br />
-  <a href="/">
-    <button type="submit" style="color:white" onclick="/">Home</button>
+  <a href="/hospital/list">
+    <button type="submit" style="color:white">Nearby Hospitals</button>
   </a>
+
   <br />
-  <a href="/hospital/list" style="text-decoration:none">Find hospitals
-  </a>
-  <br />
-  <a href="/<%=Title%>/resources" style="text-decoration:none">Find Reference Resources
+  <a href="/<%=Title%>/resources">
+    <button type="submit" style="color:white">Read more about <%=Title%></button>
   </a>
 </div>
+
 <%-include("footer")-%>
