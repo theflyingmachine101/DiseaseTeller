@@ -1,4 +1,5 @@
 module.exports = {
+  "Influenza":["A","B","C"],
   "Common Cold": ["Do salt water gargle", "Drink a lot of fluid", "Take a warm bath", "Drink Ginger Tea"],
 
   "Diarrhoea": ["Drink plenty of fluids to avoid dehydration", "Avoid milk as it can make diarrhoea worst",
