@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+
+
+        .column {
+            float: left;
+            width: 32%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #0a1896c9;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: rgba(42, 74, 160, 0.644);
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>We are a group of three B.tech. 3rd year students pursuing our B.Tech. with Computer Science and Engineering
+            brach from Motilal Nehru National Institute of Technology.</p>
+        <p>This web application is a part of our B.Tech. 4 years program and we are doing this project under Dr. MM Gore
+            sir.</p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <!-- <img src="../public/images/shikha.jpg" alt="Shikha Singh" style="width:100%"> -->
+                <div class="container">
+                    <h2>Shikha Singh</h2>
+                    <p class="title">Group Leader</p>
+                    <p>She is frome varanasi, but she likes to say it banarash. She has intern in manGoldsach. She is
+                        nice.</p>
+                    <p>shikhasinghs216@gmail.com</p>
+                    <a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrlGBGqQwbnQXmvktGZLRVHxTDQsjLfTNvccJrqhXhkhnDMdjhqcXnxJhcNXWDXKFnFzMg">
+                        <p><button class="button">Contact</button></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <!-- <img src="../public/images/surya.jpg" alt="Surya Pratap Singh" style="width:100%"> -->
+                <div class="container">
+                    <h2>Surya Pratap Singh</h2>
+                    <p class="title">Member of Group</p>
+                    <p>He is from Varanasi too, His english speaking is very bad, but he is trying. We will find out
+                        what happens to him later.</p>
+                    <p>surya.singh15071999@gmail.com</p>
+                    <a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXFBHzxZpCJfjKVHGntjQMFJtKZTbwgLhSLJxvpvgJcSrWnBLnbfMlTTMVbSbWMShVBSD">
+                        <p><button class="button">Contact</button></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <!-- <img src="../public/images/shikha.jpg" alt="Shaunaq Paul" style="width:100%"> -->
+                <div class="container">
+                    <h2>Shaunaq Paul</h2>
+                    <p class="title">Member of Groupr</p>
+                    <p>He is from a great place too. His english speaking is very good. He is a cool guy and he wants to
+                        be a game developer.</p>
+                    <p>shaunaqpaulofficial@gmail.com</p>
+                    <a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQZhMchBLcsTTHWnxSTmppDWnhwtFjpqhGmLcrkDwlhSrBNgdGthklwhJGzBDSmCSvFBSM">
+                        <p><button class="button">Contact</button></p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
