@@ -1,17 +1,19 @@
 <%-include("header")-%>
+
 <div class="box" id="heading">
   <h1> Links to all the resources</h1>
 </div>
 <div class="box">
-    <%for(var i=0;i<resource.length;++i){%>
-      <div class="item">
-        <h3><%=resource[i].name%></h3>
-        <ul>
-        <%for(var j=0;j<resource[i].resources.length;++j){%>
-          <li><a href=<%=resource[i].resources[j]%> ><%=resource[i].resources[j]%></a></li>
-          <%}%>
+  <%for(var i=0;i<resource.length;++i){%>
+  <div class="item">
+    <h3><%=resource[i].name%></h3>
+    <ul>
+      <%for(var j=0;j<resource[i].resources.length;++j){%>
+      <li><a href=<%=resource[i].resources[j]%>><%=resource[i].resources[j]%></a></li>
+      <%}%>
         </ul>
       </div>
     <%}%>
-</div>
-<%-include("footer")-%>
+  </div>
+
+  <%-include("footer")-%>
