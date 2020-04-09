@@ -1,10 +1,146 @@
 module.exports=[
   {
     name:"Influenza",
-    resources:["a","b","c"]
+    resources:["https://kidshealth.org/en/parents/flu.html",
+    "https://familydoctor.org/is-it-a-cold-or-the-flu/",
+    "https://en.wikipedia.org/wiki/Influenza"]
   },
   {
-    name:"l",
-    resources:["a","b","c"]
+    name:"Common Cold",
+    resources:["https://kidshealth.org/en/teens/colds.html",
+    "https://familydoctor.org/condition/colds-and-the-flu/",
+    "https://en.wikipedia.org/wiki/Common_cold"]
+  },
+  {
+    name:"Pneumonia",
+    resources:["https://kidshealth.org/en/parents/pneumonia.html",
+    "https://familydoctor.org/condition/pneumonia/",
+    "https://en.wikipedia.org/wiki/Pneumonia"]
+  },
+  {
+    name:"Diarrhoea",
+    resources:["https://kidshealth.org/en/parents/diarrhea.html",
+    "https://familydoctor.org/symptom/diarrhea/",
+    "https://en.wikipedia.org/wiki/Diarrhea"]
+  },
+  {
+    name:"Indigestion",
+    resources:["https://kidshealth.org/en/kids/indigestion.html",
+    "https://familydoctor.org/condition/indigestion-dyspepsia/",
+    "https://en.wikipedia.org/wiki/Indigestion"]
+  },
+  {
+    name:"Intestinal Gas",
+    resources:["https://kidshealth.org/KidsHealthDemo/en/parents/101538.html?WT.ac=clk_frommob",
+    "https://familydoctor.org/condition/bloating/",
+    "https://en.wikipedia.org/wiki/Flatulence"]
+  },
+  {
+    name:"Constipation",
+    resources:["https://kidshealth.org/en/parents/constipation.html",
+    "https://familydoctor.org/condition/constipation/",
+    "https://en.wikipedia.org/wiki/Constipation"]
+  },
+  {
+    name:"Malaria",
+    resources:["https://kidshealth.org/en/parents/malaria.html",
+    "https://familydoctor.org/condition/malaria/",
+    "https://en.wikipedia.org/wiki/Malaria"]
+  },
+  {
+    name:"Dengue",
+    resources:["https://kidshealth.org/en/parents/dengue.html",
+    "https://www.familydoctor.co.nz/categories/infections/dengue-fever-a-patients-guide/",
+    "https://en.wikipedia.org/wiki/Dengue_fever"]
+  },
+  {
+    name:"Hypertension",
+    resources:["https://kidshealth.org/en/teens/hypertension.html",
+    "https://familydoctor.org/condition/high-blood-pressure/",
+    "https://en.wikipedia.org/wiki/Hypertension"]
+  },
+  {
+    name:"Stress",
+    resources:["https://kidshealth.org/en/parents/stress.html",
+    "https://familydoctor.org/stress-causing-symptoms/",
+    "https://en.wikipedia.org/wiki/Psychological_stress"]
+  },
+  {
+    name:"Panic Attacks",
+    resources:["https://kidshealth.org/en/parents/panic-factsheet.html",
+    "https://familydoctor.org/condition/panic-disorder/",
+    "https://en.wikipedia.org/wiki/Panic_attack"]
+  },
+  {
+    name:"Chicken Pox",
+    resources:["https://kidshealth.org/en/kids/chicken-pox.html",
+    "https://familydoctor.org/condition/chickenpox/",
+    "https://en.wikipedia.org/wiki/Chickenpox"]
+  },
+  {
+    name:"Measles",
+    resources:["https://kidshealth.org/en/parents/measles.html",
+    "https://familydoctor.org/condition/measles/",
+    "https://en.wikipedia.org/wiki/Measles"]
+  },
+  {
+    name:"Mumps",
+    resources:["https://kidshealth.org/en/parents/mumps.html",
+    "https://www.familydoctor.co.nz/categories/infections/mumps-a-patients-guide/",
+    "https://en.wikipedia.org/wiki/Mumps"]
+  },
+  {
+    name:"Cellulitis",
+    resources:["https://kidshealth.org/en/parents/cellulitis.html",
+    "https://familydoctor.org/condition/cellulitis/",
+    "https://en.wikipedia.org/wiki/Cellulitis"]
+  },
+  {
+    name:"Dermatitis",
+    resources:["https://kidshealth.org/Nemours/en/parents/az-dermatitis-contact.html",
+    "https://familydoctor.org/tag/dermatitis/",
+    "https://en.wikipedia.org/wiki/Dermatitis"]
+  },
+  {
+    name:"Acne",
+    resources:["https://kidshealth.org/en/teens/acne.html",
+    "https://familydoctor.org/condition/acne/",
+    "https://en.wikipedia.org/wiki/Acne"]
+  },
+  {
+    name:"Insomnia",
+    resources:["https://kidshealth.org/en/kids/cant-sleep.html",
+    "https://familydoctor.org/condition/insomnia/",
+    "https://en.wikipedia.org/wiki/Insomnia"]
+  },
+  {
+    name:"Sleep Apnea",
+    resources:["https://kidshealth.org/en/parents/apnea.html",
+    "https://familydoctor.org/condition/sleep-apnea/",
+    "https://en.wikipedia.org/wiki/Sleep_apnea"]
+  },
+  {
+    name:"Hyperthyroidism",
+    resources:["https://kidshealth.org/en/parents/hyperthyroidism.html",
+    "https://familydoctor.org/condition/hyperthyroidism/",
+    "https://en.wikipedia.org/wiki/Hyperthyroidism"]
+  },
+  {
+    name:"Hypothyroidism",
+    resources:["https://kidshealth.org/en/parents/hypothyroidism.html",
+    "https://familydoctor.org/condition/hypothyroidism/",
+    "https://en.wikipedia.org/wiki/Hypothyroidism"]
+  },
+  {
+    name:"Kidney Stones",
+    resources:["https://kidshealth.org/en/parents/kidney-stones.html",
+    "https://familydoctor.org/condition/kidney-stones/",
+    "https://en.wikipedia.org/wiki/Kidney_stone_disease"]
+  },
+  {
+    name:"Urinary Tract Infection",
+    resources:["https://kidshealth.org/en/parents/urinary.html",
+    "https://familydoctor.org/condition/urinary-tract-infections/",
+    "https://en.wikipedia.org/wiki/Urinary_tract_infection"]
   }
 ]
