@@ -17,18 +17,19 @@ app.use(bodyParser.urlencoded({
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
+
 //Port Used
-app.listen("3000", function () {
+app.listen("3000", function() {
   console.log(" Server started on port 3000");
 });
 
 //Get request for root route
-app.get("/", function (req, res) {
+app.get("/", function(req, res) {
   res.render("index", {});
 });
 
 //Get request for DiseaseCategory List
-app.get("/DiseaseCatList", function (req, res) {
+app.get("/DiseaseCatList", function(req, res) {
   res.render("DiseaseCategoryList", {
     Title: "What Do you Think Where is the problem?",
     disease: diseaseList
@@ -36,30 +37,35 @@ app.get("/DiseaseCatList", function (req, res) {
 });
 
 //Get request for resources of all the disease
-app.get("/disease/allResoruces", function (req, res) {
-  res.render("ResourcesList", { resource: resources });
+app.get("/disease/allResoruces", function(req, res) {
+  res.render("ResourcesList", {
+    resource: resources
+  });
 });
 
 
 //Get request for resources of  single disease
-app.get("/:type/resources", function (req, res) {
+app.get("/:type/resources", function(req, res) {
   for (var i = 0; i < resources.length; ++i) {
     if (resources[i].name === req.params.type) {
-      res.render("ResourcesList", { resource: [resources[i]] });
+      res.render("ResourcesList", {
+        resource: [resources[i]]
+      });
       break;
     }
   }
 });
 
 //Get request for about page
-app.get("/aboutpage", function (req, res) {
+app.get("/aboutpage", function(req, res) {
   res.render("About", {});
 });
 
 
 //Get request for disease in the Category Selected
-app.get("/:type", function (req, res) {
-  var tempSymptoms = [], symptoms = [];
+app.get("/:type", function(req, res) {
+  var tempSymptoms = [],
+    symptoms = [];
   for (var i = 0; i < diseaseList.length; ++i) {
     if (diseaseList[i].category == req.params.type) {
       for (var j = 0; j < diseaseList[i].disease.length; ++j) {
@@ -76,31 +82,44 @@ app.get("/:type", function (req, res) {
       symptoms.push(tempSymptoms[i]);
   }
   symptoms.push(tempSymptoms[tempSymptoms.length - 1]);
-  res.render("SymptomsList", { Category: req.params.type, Title: "Select the symptoms you have", symptoms: symptoms });
+  res.render("SymptomsList", {
+    Category: req.params.type,
+    Title: "Select the symptoms you have",
+    symptoms: symptoms
+  });
 });
 
 //Get request for home remedies
-app.get("/homeRemedies/:type", function (req, res) {
-  res.render("HomeRemediesList", { remedies: homeRemedies[req.params.type] });
+app.get("/homeRemedies/:type", function(req, res) {
+  res.render("HomeRemediesList", {
+    remedies: homeRemedies[req.params.type]
+  });
 });
 
 //Get request for precautions
-app.get("/precautions/:type", function (req, res) {
-  res.render("PrecautionList", { precautions: precautions[req.params.type] });
+app.get("/precautions/:type", function(req, res) {
+  res.render("PrecautionList", {
+    precautions: precautions[req.params.type]
+  });
 });
 
 //Get request for finding nearby  hospitals
-app.get("/hospital/list", function (req, res) {
-  res.render("LocationList", {Location: locations });
+app.get("/hospital/list", function(req, res) {
+  res.render("LocationList", {
+    Location: locations
+  });
 });
 
 //Post requests  for finding the Disease a person may have
-app.post("/answer", function (req, res) {
-  var accuracy = 0, answer = "", occuredSymptoms = req.body.checkbox;
+app.post("/answer", function(req, res) {
+  var accuracy = 0,
+    answer = "",
+    occuredSymptoms = req.body.checkbox;
   for (var i = 0; i < diseaseList.length; ++i) {
     if (diseaseList[i].category == req.body.Category) {
       for (var j = 0; j < diseaseList[i].disease.length; ++j) {
-        var key = diseaseList[i].disease[j], count = 0;
+        var key = diseaseList[i].disease[j],
+          count = 0;
         for (var k = 0; k < diseaseSymptoms[key].length; ++k) {
           for (var l = 0; l < occuredSymptoms.length; ++l) {
             if (occuredSymptoms[l] == diseaseSymptoms[key][k])
@@ -115,5 +134,7 @@ app.post("/answer", function (req, res) {
       }
     }
   }
-  res.render("Answer", { Title: answer });
+  res.render("Answer", {
+    Title: answer
+  });
 });
