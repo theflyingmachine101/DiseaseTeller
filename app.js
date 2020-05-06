@@ -61,6 +61,10 @@ app.get("/aboutpage", function(req, res) {
   res.render("About", {});
 });
 
+//Get request for contacts page
+app.get("/contacts", function (req, res) {
+  res.render("Contacts", {});
+});
 
 //Get request for disease in the Category Selected
 app.get("/:type", function(req, res) {

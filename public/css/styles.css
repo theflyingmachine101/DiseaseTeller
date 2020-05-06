@@ -40,7 +40,7 @@ ul {
 
 .logo_container h1 {
   color: white;
-  font-family: "Montserrate";
+  /* font-family: "Montserrate"; */
   font-size: 40px;
   font-weight: 200;
 }
@@ -155,11 +155,12 @@ h1 {
 }
 
 #r_disease {
-  background-color: #c0cfed;
+  /* background-color: #c0cfed; */
   text-align: center;
   border-radius: 10px;
   font-size: 33px;
   background-color: #5e69b5;
+  /* background-color: #0a1896c9; */
 }
 
 #abc {

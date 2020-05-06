@@ -1,6 +1,10 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     margin: 0;
+}
+
+html{
+  background-color: #dadbe3;
 }
 
 /* for the navigation bar only */
@@ -34,16 +38,20 @@ a{
   font-family: "Montserrate";
   font-size: 40px;
   font-weight: 200;
+  /* padding: 0px; */
+  padding: 15px 0px 0px 10px;
+  margin: 0px;
 }
 
 .logo_container_about h1 span {
   font-weight: 800;
+  padding: 0px;
 }
 
 .navigation_about {
   width: 70%;
   /* background-color: pink; */
-  padding: 25px 0px 0px 0px;
+  padding: 10px 0px 14px 0px;
   float: right;
   text-align: right;
   list-style: none;
@@ -79,6 +87,7 @@ a{
     padding: 50px;
     text-align: center;
     background-color: #0a1896c9;
+    background-color: #5e69b5;
     color: white;
 }
 
