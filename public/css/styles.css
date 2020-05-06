@@ -116,8 +116,9 @@ main {
 /* by shikha */
 
 html {
-  background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, rgba(42, 74, 160, 0.644) 50%, #E4E9FD 50%);
+  /* background-color: #E4E9FD; */
+  background-color: white;
+  /* background-image: -webkit-linear-gradient(65deg, rgba(42, 74, 160, 0.644) 50%, #E4E9FD 50%); */
   /* min-height: 1000px; */
   /* font-family: 'helvetica neue'; */
 }
