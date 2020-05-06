@@ -3,74 +3,23 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
-
-
-        .column {
-            float: left;
-            width: 32%;
-            margin-bottom: 16px;
-            padding: 0 8px;
-        }
-
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            margin: 8px;
-        }
-
-        .about-section {
-            padding: 50px;
-            text-align: center;
-            background-color: #0a1896c9;
-            color: white;
-        }
-
-        .container {
-            padding: 0 16px;
-        }
-
-        .container::after,
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        .title {
-            color: grey;
-        }
-
-        .button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 8px;
-            color: white;
-            background-color: rgba(42, 74, 160, 0.644);
-            text-align: center;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        .button:hover {
-            background-color: #555;
-        }
-
-        @media screen and (max-width: 650px) {
-            .column {
-                width: 100%;
-                display: block;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/css/stylesAbout.css">
 </head>
 
 <body>
+    <header>
+      <div class="container_about">
+        <div class="logo_container_about">
+          <h1>Disease<span>Teller</span></h1>
+        </div>
+        <ul class="navigation_about">
+          <li><a href="/">Home</a></li>
+          <li><a href="/disease/allResoruces">Disease</a></li>
+          <li><a href="/aboutpage">Contacts</a></li>
+          <li><a href="/aboutpage">About Us</a></li>
+        </ul>
+      </div>
+    </header>
 
     <div class="about-section">
         <h1>About Us Page</h1>
