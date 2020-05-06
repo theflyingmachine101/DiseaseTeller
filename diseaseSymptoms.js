@@ -5,7 +5,7 @@ module.exports = {
     "Diarrhoea": ["abdominal cramps", "abdominal pain (mild)", "bloating", "blood in stool", "low fever (<100.4 F)", "mucus in stool", "nausea", "watery stool"],
     "Indigestion": ["bloating in upper abdominal", "burnig in upper abdominal", "discomfort in upper abdominal", "early feeling of fullness while eating", "nausea"],
     "Intestinal Gas": ["abdominal cramps", "abdominal pain (mild)", "bloating", "burping", "increased size of abdomen", "knotted feeling in the abdomen", "passing gas"],
-    "Constipation": ["a","b","c","d","e","f"],
+    "Constipation": ["difficulty passing stool","straining when passing stool","passing less stool than usual","lumpy, dry and hard stool","pain and cramping in stomach","feeling bloated"],
     "Malaria": ["abdominal pain (mild)", "chest pain", "chills", "cough", "fatigue", "headache", "high fever (>100.4 F)", "increased sweating", "muscle pain", "nausea", "vomiting"],
     "Dengue": ["anxiety", "bleeding in gums", "bleeding in nose", "blood in stool", "blood in urine", "blood in vomit", "bone pain", "cold skin", "difficulty breathing", "fatigue", "headache", "irritability", "joint pain", "muscle pain", "nausea", "pain behind the eyes", "rash on the face", "swelling in glands", "vomiting (persistent)"],
     "Hypertension": ["blood in urine", "chest pain", "confusion (elders)", "difficulty breathing", "fatigue", "headache (severe)", "irregular heartbeat", "pounding in chest", "pounding in neck", "pounding in ears", "vision problem"],
