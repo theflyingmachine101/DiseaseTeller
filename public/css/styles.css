@@ -1,41 +1,47 @@
-
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
-  text-decoration: none;
 }
-
 
 /* for navigation menu */
 
-.header {
+header {
   width: 100%;
-  height: 80px;
-  display: block;
   background-color: #11153b;
 }
 
-.inner_header {
-  width: 1000px;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
+.navigation a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
 .logo_container {
-  height: 100%;
-  display: table;
+  /* background-color: red; */
+  padding: 5px 0px;
   float: left;
+  width: 30%;
 }
 
 .logo_container h1 {
   color: white;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
   font-family: "Montserrate";
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 200;
 }
 
@@ -44,45 +50,34 @@
 }
 
 .navigation {
+  width: 70%;
+  /* background-color: pink; */
+  padding: 25px 0px 0px 0px;
   float: right;
-  height: 100%;
+  text-align: right;
+  list-style: none;
 }
 
-.navigation a {
-  height: 100%;
-  display: table;
-  float: left;
-  padding: 0px 20px;
-}
-
-.navigation a:last-child {
-  padding-right: 0;
-}
-
-.navigation a li {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  color: white;
-  font-family: "Montserrat";
-  font-size: 16px;
+.navigation li{
+  display: inline;
+  padding: 0px 15px;
 }
 
 /* for main page */
 
-.main {
-  width: 100%;
-  height: 600px;
+main {
   background-image: url(../images/about-bg.jpg);
+  background-position: 0px 0px;
   background-size: cover;
-  background-position: top;
-  background-position-x: 80px;
+  background-repeat: no-repeat;
+  min-height: 400px;
 }
 
 .sub_main {
-  width: 50%;
+  width: 72%;
   height: auto;
-  padding: 100px;
+  padding-top: 50px;
+  /* background-color: red; */
 }
 
 .sub_main h1 {
@@ -90,11 +85,30 @@
   font-size: 45px;
   text-align: center;
 }
+
 .sub_main p {
   padding: 20px;
   text-align: left;
   font-size: 18px;
   color: rgba(13, 15, 15, 0.747);
+}
+
+@media (max-width:900px) {
+  .sub_main{
+    width: 80%;
+    /* background-color: green; */
+  }
+
+  .navigation li{
+    padding: 0px 5px;
+  }
+}
+
+@media (max-width:700px) {
+  .sub_main{
+    width: 100%;
+    /* background-color: yellow; */
+  }
 }
 
 .sub_main button {
@@ -103,18 +117,18 @@
   width: 50%;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
-  background-color: rgba(11, 47, 146, 0.644);
+  /* background-color: rgba(11, 47, 146, 0.644); */
+  background-color: #373f73;
   font-size: 18px;
   font-weight: 550;
+  color: white;
 }
+
 
 /* by shikha */
 
 html {
-  background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, rgba(42, 74, 160, 0.644) 50%, #E4E9FD 50%);
-  /* min-height: 1000px; */
-  /* font-family: 'helvetica neue'; */
+  background-color: #dadbe3;
 }
 
 h1 {
@@ -124,13 +138,32 @@ h1 {
 .box {
   max-width: 400px;
   margin: 50px auto;
-  background: white;
+  background: #c0cfed;
   border-radius: 10px;
-  box-shadow: 10px 10px 150px -10px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 10px 10px 150px -10px rgba(0, 0, 0, 0.3); */
 }
 
 #heading {
-  background-color: rgba(42, 74, 160, 0.644);
+  background-color: #dadbe3;
+  text-align: center;
+}
+
+#answer {
+  font-size: 45px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#r_disease {
+  background-color: #c0cfed;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 33px;
+  background-color: #5e69b5;
+}
+
+#abc {
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -173,27 +206,16 @@ form {
   margin-left: 20px;
 }
 
-/* button {
-  min-height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border-color: transparent;
-  background-color: rgba(42, 74, 160, 0.644);
-  color: #fff;
-  font-size: 30px;
-  padding-bottom: 6px;
-  border-width: 0;
-
-} */
 button {
   margin: 20px;
   height: 65px;
   width: 50%;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
-  background-color: rgba(42, 74, 160, 0.644);
+  background-color: #373f73;
   font-size: 18px;
   font-weight: 550;
+  color: white;
 }
 
 input[type="text"] {
