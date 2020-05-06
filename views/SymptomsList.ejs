@@ -1,10 +1,9 @@
 <%-include("header")-%>
 
-<div class="box" id="heading">
-  <h1> <%=Title%></h1>
-</div>
-<div class="box">
-  <form action="/answer" method="post">
+<h1 id="abc"> <%=Title%></h1>
+
+<form action="/answer" method="post">
+  <div class="box">
     <%for(var i=0;i<symptoms.length;++i){%>
 
     <div class="item">
@@ -12,8 +11,10 @@
       <p><%=symptoms[i]%></p>
     </div>
     <%}%>
-      <button type="submit" name="Category" value="<%=Category%>">Submit</button>
-  </form>
-</div>
+  </div>
+  <div class="box" id="heading">
+    <button type="submit" name="Category" value="<%=Category%>">Submit</button>
+  </div>
+</form>
 
 <%-include("footer")-%>
