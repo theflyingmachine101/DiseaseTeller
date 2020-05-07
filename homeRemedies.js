@@ -1,9 +1,23 @@
 module.exports = {
-  "Common Cold": ["Do salt water gargle", "Drink a lot of fluid", "Take a warm bath", "Drink Ginger Tea"],
+  "Common Cold": ["Do salt water gargle",
+    "Drink a lot of fluid",
+    "Take a warm bath",
+     "Drink Ginger Tea"],
 
-  "Influenza":["A","B","C"],
+  "Influenza":["Drink water and fluids. Drinking water and other fluids is even more important when you have the flu",
+    "Get plenty of rest",
+    "Drink warm broth",
+    "Up your zinc intake",
+    "Rinse with salt water",
+    "Drink herbal tea",
+    "Apply essential oils",
+    "Use a humidifier"],
 
-  "Pneumonia":["A","B","C"],
+  "Pneumonia":["If you are coughing, do saltwater gargle",
+    "If your have fever and body pain you can take pain relievers",
+    "If you are having chills, drink warm water and soups",
+    "If you are sort of breath, sit in front of fan",
+    "Drink ginger tea"],
 
   "Diarrhoea": ["Drink plenty of fluids to avoid dehydration", "Avoid milk as it can make diarrhoea worst",
     "Sport Beverages (eg. Gatorade or Powerade) can be beneficial", "Avoid greasy or fatty foods",

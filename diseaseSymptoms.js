@@ -1,22 +1,23 @@
 module.exports = {
   "Influenza": ["high fever (>100.4 F)",
-  "sore throat",
-  "chills",
-  "headache",
-  "body aches",
-   "dry cough",
+    "sore throat",
+    "chills",
+    "headache",
+    "body aches",
+    "dry cough",
     "nasal congestion",
     "increased sweating",
-     "fatigue"
+    "fatigue"
    ],
-    "Common Cold": ["cough",
+
+  "Common Cold": ["cough",
     "fatigue",
-     "low fever (<100.4 F)",
-     "nasal congestion",
-     "runny nose",
-     "sneezing",
-     "sore throat"],
-     
+    "low fever (<100.4 F)",
+    "nasal congestion",
+    "runny nose",
+    "sneezing",
+    "sore throat"],
+
     "Pneumonia": ["chest pain while breathing", "chills", "confusion (elders)", "cough with phlegm", "diarrhoea", "fatigue", "high fever (>100.4 F)", "increased sweating", "lower body temp (elders)", "nausea", "shaking", "shortness of breath", "vomiting"],
     "Diarrhoea": ["abdominal cramps", "abdominal pain (mild)", "bloating", "blood in stool", "low fever (<100.4 F)", "mucus in stool", "nausea", "watery stool"],
     "Indigestion": ["bloating in upper abdominal", "burnig in upper abdominal", "discomfort in upper abdominal", "early feeling of fullness while eating", "nausea"],
