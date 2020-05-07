@@ -30,7 +30,7 @@ app.get("/", function (req, res) {
 //Get request for DiseaseCategory List
 app.get("/DiseaseCatList", function (req, res) {
   res.render("DiseaseCategoryList", {
-    Title: "What Do you Think Where is the problem?",
+    Title: "Select the Category that Best Relates to your Symptoms",
     disease: diseaseList
   });
 });
