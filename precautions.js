@@ -1,18 +1,18 @@
 module.exports = {
-  "Influenza": ["getting a shot of flue vaccine each flue season is the best thing one can do to protect himself",
-  "Avoid close contact with those who are sick or other people if you are sick",
-  "you have flu-like symptoms, stay home from school or work for at least 24 hours after your fever has disappeared",
-  "use a tissue to cover your nose and mouth when sneezing and coughing. Dispose of the tissue immediately after use",
-  "regularly wash your hands with soap and water or an alcohol-based hand rub",
-  "try not to touch your eyes, nose, or mouth without first washing your hands to ensure they are germ-free",
-  "cean and disinfect surfaces that people come into contact with at work, school, or home",
-  "maintain your immune system by eating healthy fruits and vegetables, exercising daily, reduce stress and taking sleep of 7 to 9 hours each night",
-  "if your are a smoker, just quit smoking"],
+  "Influenza": ["Get a shot of flu vaccine each flu season, This is the best thing one can do to protect themselves.",
+  "Avoid close contact with those who are sick or other people if you are sick.",
+  "Stay at home 24 hours after your fever has disappeared.",
+  "Use a tissue to cover your nose and mouth when sneezing and coughing. Dispose the tissue immediately after use.",
+  "Regularly wash your hands with soap and water or an alcohol-based hand rub.",
+  "Try not to touch your eyes, nose, or mouth without  washing your hands(atleast 20 seconds).",
+  "Clean and disinfect surfaces regulary.",
+  "Maintain your Immune system by eating healthy fruits and vegetables, exercising daily, reduce stress and sleep for  7 to 9 hours each night",
+  "If you Smoke quit it"],
 
   "Common Cold": ["washing your hands frequently is probably single best measure to prevent cold from spreading",
   "Avoid touching your face, especially the nose, mouth, and eye areas, if you are around someone with a cold or have been touching surfaces in a public area",
   "Don't smoke as cigarette smoke can irritate the airways and increase susceptibility to colds and other infections"],
-  
+
   "Pneumonia": ["chest pain while breathing", "chills", "confusion (elders)", "cough with phlegm", "diarrhoea", "fatigue", "high fever (>100.4 F)", "increased sweating", "lower body temp (elders)", "nausea", "shaking", "shortness of breath", "vomiting"],
   "Diarrhoea": ["abdominal cramps", "abdominal pain (mild)", "bloating", "blood in stool", "low fever (<100.4 F)", "mucus in stool", "nausea", "watery stool"],
   "Indigestion": ["bloating in upper abdominal", "burnig in upper abdominal", "discomfort in upper abdominal", "early feeling of fullness while eating", "nausea"],

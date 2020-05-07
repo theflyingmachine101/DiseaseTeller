@@ -1,7 +1,12 @@
 module.exports = {
   "Common Cold": ["Do salt water gargle", "Drink a lot of fluid", "Take a warm bath", "Drink Ginger Tea"],
 
-  "Influenza":["A","B","C"],
+  "Influenza":["Drinking Water and other fluids.",
+  "Getting plenty of rest.It's a must.",
+  "Drinking warm Broth/Soup/Herbal Tea.",
+  "Increasing your zinc intake(Eat lentils,shellfish,dairy,eggs,nuts,beans).",
+  "Rinsing with Salt Water.",
+  "Applying essential Oils."],
 
   "Pneumonia":["A","B","C"],
 
