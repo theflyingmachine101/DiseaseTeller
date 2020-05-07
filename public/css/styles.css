@@ -84,10 +84,12 @@ main {
   font-weight: 800;
   font-size: 45px;
   text-align: center;
+  padding-right: 120px;
 }
 
 .sub_main p {
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 20px 100px 20px 20px;
   text-align: left;
   font-size: 18px;
   color: rgba(13, 15, 15, 0.747);
